@@ -48,12 +48,6 @@ func CreateClient(broker string, id string, callback_handler mqtt.MessageHandler
 
 Dessa maneira, tais informações são coletados no arquivo .env (ou definidas no client.go):
 ```
-err := godotenv.Load("./.env")
-
-	if err != nil {
-		fmt.Printf("Error loading .env file: %s", err)
-	}
-
 	newBroker := os.Getenv("BROKER_ADDR")
 	user := os.Getenv("HIVE_USER")
 	pswd := os.Getenv("HIVE_PSWD")
