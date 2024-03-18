@@ -34,7 +34,7 @@ func NewSensor(
 		Longitude:   longitude,
 		Rate:        rate,
 		Unit:        unit,
-		Measurement: measurement
+		Measurement: measurement,
 	}
 
 	return s

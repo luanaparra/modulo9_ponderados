@@ -56,7 +56,7 @@ go test -v
 **Subscriber**
 ```
 cd subscriber
-go run subscriber.go
+go test -v
 ```
 
 Desse modo, os testes foram adicionados para a avaliação do recebimento das mensagens pelo broker usando o mecanismo de QoS, além da confirmação da taxa de disparo dos sensores. Ademais, os testes asseguram que as mensagens enviadas pelo publisher foram recebidas corretamente pelo subscriber. 
